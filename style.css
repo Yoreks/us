@@ -87,17 +87,16 @@ img[src*="https://cdn.rawgit.com/000webhost/log...​"] { display: none; }
 
 @media screen and (max-width: 720px) {
 
-    #Icontainer{
-        padding-top: 60px;
-    }
+    
 
 
    #container{
        background-color: rgba(0, 0, 0, 0.7);
+       background-size: 50%;
    }
     
     body{
-        font-size: 13vw;    
+        font-size: 11vw;    
     }
     
 
