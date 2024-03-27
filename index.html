@@ -1,0 +1,50 @@
+<html lang="es">
+    <head>
+        <title>Te amo mucho amorcito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <div id="Icontainer">
+            <span class="leftText">
+            Cada día<br />
+            <span class="love">mi amor por ti ♥</span><br />
+                se hace más grande.<br />
+            <span class="since"></span><br />
+            <span id="time">XXX.xxxxx</span><br />
+            <span class="days">días de tener la novia más hermosa del mundo.</span>
+            </span>
+        </div>
+    </div>
+
+        
+        
+
+        <script>
+        
+            function getLoveTime() {
+                //18. Marzo 2019
+                var time = Date.now() - new Date(2023, 9 - 1, 30, 0, 0, 0, 0).getTime();
+                time = new Date(time);
+                return time / (1000*60*60*24);
+            }
+
+            function formatNumber(num, a){
+                num = num + "";
+                let before = num.split(".")[0];
+                let after = num.split(".")[1];
+                while(after.length < a)
+                    after += "0";
+                return before + "<small>" + "." + after + "</small>";
+            }
+
+            setInterval(function(){
+                document.getElementById("time").innerHTML = formatNumber(Math.round(getLoveTime() * 100000) / 100000, 5);
+            }, 1000);
+
+        </script>
+    <div id="ultimo"></div>
+    </body>
+</html>
