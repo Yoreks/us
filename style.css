@@ -51,6 +51,21 @@ small{
     bottom: 1em; 
 }
 
+.btn1{
+    background-color: rgb(223, 138, 138);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+    z-index: 1000;
+    float: right;
+    position: sticky;
+    margin-right: 10px;
+}
+
+.as{
+    text-decoration: none;
+    color: white;
+}
 
 .since{
     font-size: 0.7em;
@@ -67,7 +82,7 @@ small{
 #container{
     width: 100%;
     height: 100vh;
-    background-image: url("us.png");
+    background-image: url("");
     background-position: center;
     background-size: 100% 100%;
 }
