@@ -54,18 +54,16 @@ small{
 .btn1{
     background-color: rgb(223, 138, 138);
     color: white;
-    border-radius: 5px;
-    padding: 2%;
+    border-radius: 10px;
+    padding: 10px;
     z-index: 1000;
     float: right;
     position: sticky;
     margin-right: 10px;
+    text-decoration: none;
+    font-size: 0.4em;
 }
 
-.as{
-    text-decoration: none;
-    color: white;
-}
 
 .since{
     font-size: 0.7em;
